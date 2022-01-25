@@ -6,6 +6,11 @@
 
 /* Common rules */
 
+html {
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
 .clearfix::after {
 	content: '';
 	display: table;
@@ -14,6 +19,13 @@
 
 .centered {
 	margin: 0 auto;
+	position: relative;
+}
+
+.container-1200 {
+	max-width: 1200px;
+	margin-top: 5rem;
+	padding: 5rem 0;
 }
 
 .float-left {
@@ -47,15 +59,30 @@ nav ul>li {
 	color: white;
 }
 
+h1 {
+	font-size: 4rem;
+	line-height: 1.3em;
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.3em;
+}
+
 /* Header rules */
 
 .top-nav {
 	position: fixed;
+	top: 0;
+	left: 0;
+
 	display: block;
 	overflow: hidden;
 	width: 100%;
 	min-width: fit-content;
 	line-height: 5rem;
+	height: 5rem;
+	padding: 0 1.5rem;
 
 	background-color: white;
 }
@@ -66,9 +93,29 @@ nav ul>li {
 
 .logo {
 	vertical-align: middle;
+	margin-right: 3rem;
 }
 
 header {
 	background-color: #b4d0e7;
-	height: 500px;
+}
+
+.top-nav li:not(:last-child) {
+	margin-right: 3rem;
+}
+
+.top-nav li>a:not(.btn) {
+	color: black;
+}
+
+.container-1200 img {
+	max-width: 70%;
+}
+
+.container-1200 p {
+	margin-top: 2rem;
+}
+
+.container-1200 .btn {
+	margin: 1rem 0;
 }
