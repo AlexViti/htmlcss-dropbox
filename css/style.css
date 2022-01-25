@@ -6,10 +6,69 @@
 
 /* Common rules */
 
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 .centered {
 	margin: 0 auto;
 }
 
-.fixed {
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul>li {
+	display: inline-block;
+}
+
+.btn {
+	display: inline-block;
+	padding: .5em 1em;
+	line-height: 1em;
+}
+
+.btn-blue {
+	background-color: #0061ff;
+	color: white;
+}
+
+/* Header rules */
+
+.top-nav {
 	position: fixed;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	min-width: fit-content;
+	line-height: 5rem;
+
+	background-color: white;
+}
+
+.logo-nav {
+	display: inline-block;
+}
+
+.logo {
+	vertical-align: middle;
+}
+
+header {
+	background-color: #b4d0e7;
+	height: 500px;
 }
