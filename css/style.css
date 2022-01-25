@@ -22,10 +22,10 @@ html {
 	position: relative;
 }
 
-.container-1200 {
-	max-width: 1200px;
-	margin-top: 5rem;
-	padding: 5rem 0;
+.container-1300 {
+	max-width: 1300px;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .float-left {
@@ -59,14 +59,13 @@ nav ul>li {
 	color: white;
 }
 
-h1 {
-	font-size: 4rem;
-	line-height: 1.3em;
-	font-weight: 700;
+h1, p {
+	line-height: 1.4em;
 }
 
-p {
-	line-height: 1.3em;
+h1 {
+	font-size: 4rem;
+	font-weight: 700;
 }
 
 /* Header rules */
@@ -75,7 +74,7 @@ p {
 	position: fixed;
 	top: 0;
 	left: 0;
-
+	
 	display: block;
 	overflow: hidden;
 	width: 100%;
@@ -83,7 +82,7 @@ p {
 	line-height: 5rem;
 	height: 5rem;
 	padding: 0 1.5rem;
-
+	
 	background-color: white;
 }
 
@@ -108,14 +107,19 @@ header {
 	color: black;
 }
 
-.container-1200 img {
+header>section {
+	margin-top: 5rem;
+	padding: 10rem 0;
+}
+
+header>section img {
 	max-width: 70%;
 }
 
-.container-1200 p {
-	margin-top: 2rem;
+header>section h1 {
+	margin-bottom: 2rem;
 }
 
-.container-1200 .btn {
+header>section .btn {
 	margin: 1rem 0;
 }
