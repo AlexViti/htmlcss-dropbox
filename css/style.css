@@ -178,7 +178,25 @@ a {
 }
 
 .partners {
+	margin-top: 150px;
+}
+
+.partners img{
 	width: 50%;
+	margin-right: 4rem;
+}
+
+.partners h3 {
+	padding-top: 1.5rem;
+}
+
+.partners p {
+	margin: 1rem 0;
+	line-height: 2;
+}
+
+.business-feature {
+	margin-top: 110px;
 }
 
 /* Mock radios button */
@@ -226,6 +244,7 @@ a {
 
 .plan-card ul {
 	margin: 3rem 0;
+	font-family: ;
 }
 
 .plan-card li:not(:first-child) {
@@ -264,12 +283,37 @@ a {
 
 .plan-card .check {
 	margin-top: 1.5rem;
+	margin-bottom: 5rem;
+}
+
+.plan-card:first-of-type {
+	padding-bottom: 4rem;
+}
+
+.horizzontal-plan-card {
+	margin-top: 3rem;
+}
+
+.horizzontal-plan-card p {
+	margin: 1.5rem 0;
+}
+
+h3+h4 {
+	margin: 1rem 0;
+}
+
+.horizzontal-plan-card .btn {
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
 .business-feature .column>img {
 	width: 100%;
 }
 
+.business-feature h3, .business-feature h2 {
+	margin-bottom: 2rem;
+}
 /* Plan card list bullets */
 
 .plan-card .icon::before {
