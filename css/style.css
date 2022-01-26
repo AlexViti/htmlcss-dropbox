@@ -8,7 +8,7 @@
 
 html {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-weight: 600;
 	line-height: 1.4;
 }
 
@@ -25,14 +25,10 @@ html {
 
 .container-1300 {
 	max-width: 1300px;
-	padding-left: 2rem;
-	padding-right: 2rem;
 }
 
 .container-1100 {
 	max-width: 1100px;
-	padding-left: 2rem;
-	padding-right: 2rem;
 }
 
 .float-left {
@@ -52,29 +48,26 @@ nav ul>li {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 4.5rem;
 	font-weight: 700;
-	font-family: 'Open Sans Condensed', 'Open Sans' sans-serif;;
+	font-family: 'Open Sans Condensed', 'Open Sans', sans-serif;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.4rem;
+	font-weight: 700;
 }
 
 h3 {
-	font-size: 1.7rem;
+	font-size: 2rem;
+	font-family: 'Open Sans Condensed', 'Open Sans', sans-serif;
+	font-weight: 700;
 }
 
-/* Margin */
-
-.mt-3rem {
-	margin-top: 3rem;
+h4 {
+	font-size: 1.1rem;
+	font-weight: 700;
 }
-
-.mt-5rem {
-	margin-top: 5rem;
-}
-
 
 /* Links style */
 
@@ -89,8 +82,10 @@ a {
 
 .btn {
 	display: inline-block;
-	padding: .5em 1em;
+	padding: .7em 1em;
 	line-height: 1em;
+	font-weight: 400;
+	text-align: center;
 }
 
 .btn-blue {
@@ -147,36 +142,39 @@ a {
 /* Main header */
 .main-header {
 	background-color: #b4d0e7;
-}
-
-.main-header {
-	padding: 5rem 0 4rem;
+	padding: 100px 0 80px;
+	margin-top: 5rem;
 }
 
 .main-header img {
-	max-width: 70%;
+	max-width: 65%;
+	margin-left: 50px
 }
 
 .main-header h1 {
 	margin-bottom: 2rem;
 }
 
-.main-header .btn, .cards-row .btn {
-	margin: 1rem 0;
+.main-header .btn {
+	margin: 2rem 0 1rem;
 }
 
 .arrow-down {
 	display: inline-block;
 	margin-top: 2rem;
-	font-size: 2rem;
+	font-size: 3rem;
 	color: black;
 }
 
 /* Sections */
 
 #first-section {
-	margin-top: 10rem;
+	margin-top: 200px;
 	scroll-margin-top: 5rem;
+}
+
+.billing {
+	margin: 4rem 0 2.5rem;
 }
 
 .partners {
@@ -217,34 +215,55 @@ a {
 }
 
 .plan-card {
-	border: 1px solid gray;
+	border: 1px solid #d0d0d3;
 	font-size: .9rem;
 }
 
 .plan-card>section {
-	padding: 1rem;
-	border-top: 1px solid gray;
+	padding: 1.5rem;
+	border-top: 1px solid #d0d0d3;
 }
 
-.plan-card li{
-	margin-top: .5em;
+.plan-card ul {
+	margin: 3rem 0;
+}
+
+.plan-card li:not(:first-child) {
+	margin-top: 1.5rem;
+}
+
+.column .btn {
+	width: 100%;
+}
+
+.column .btn+div {
+	margin: 2rem 0;
 }
 
 .plan-type {
 	text-align: center;
+	padding: .5rem;
+	font-size: 1.1rem;
 }
 
 .price {
 	font-weight: 700;
+	font-size: 1.1rem;
+	margin-top: 1rem;
 }
 
 .recurrence {
 	color: gray;
-	height: 3rem;
+	margin-top: 1rem;
 }
 
 .plan-card hr {
 	width: 50px;
+	margin-bottom: 2.5rem;
+}
+
+.plan-card .check {
+	margin-top: 1.5rem;
 }
 
 .business-feature .column>img {
