@@ -170,15 +170,26 @@ h2 {
 
 /* Plan card */
 
+.plan-cards-container {
+	width: 100%;
+}
+
 .plan-card {
-	width: 33%;
+	width: 30%;
 	border: 1px solid gray;
+	padding: 1rem;
+}
+
+.plan-card:nth-of-type(2) {
+	margin: 0 5%;
 }
 
 .plan-type {
-	border-bottom: 1px solid gray;
-
 	text-align: center;
+}
+
+.plan-card h3 {
+	border-top: 1px solid gray;
 }
 
 .price {
@@ -189,7 +200,11 @@ h2 {
 	color: gray;
 }
 
-/* Before selectors */
+.plan-card hr {
+	width: 50px;
+}
+
+/* Plan card list bullets */
 
 .plan-card .icon::before {
 	display: inline-block;
@@ -208,12 +223,24 @@ h2 {
 	content: url(../img/icons/user-regular.svg);
 }
 
+.users::before {
+	content: url(../img/icons/user-plus-solid.svg);
+}
+
 .storage::before {
 	content: url(../img/icons/folder-regular.svg);
 }
 
 .pencil::before {
 	content: url(../img/icons/pencil-alt-solid.svg);
+}
+
+.building::before {
+	content: url(../img/icons/building-regular.svg);
+}
+
+.smile::before {
+	content: url(../img/icons/smile-regular.svg);
 }
 
 .check .icon::before {
