@@ -48,7 +48,7 @@ a {
 	color: black;
 }
 
-nav ul {
+ul {
 	list-style: none;
 }
 
@@ -166,4 +166,56 @@ h2 {
 
 .billing .circle:not(:first-of-type) {
 	margin-left: 1rem;
+}
+
+/* Plan card */
+
+.plan-card {
+	width: 33%;
+	border: 1px solid gray;
+}
+
+.plan-type {
+	border-bottom: 1px solid gray;
+
+	text-align: center;
+}
+
+.price {
+	font-weight: 700;
+}
+
+.recurrence {
+	color: gray;
+}
+
+/* Before selectors */
+
+.plan-card .icon::before {
+	display: inline-block;
+	height: .9em;
+	width: .9em;
+	vertical-align: -.2em;
+	margin-right: -.3rem;
+}
+
+.icon {
+	text-indent: -.6em;
+	margin-left: 1.3rem;
+}
+
+.user::before {
+	content: url(../img/icons/user-regular.svg);
+}
+
+.storage::before {
+	content: url(../img/icons/folder-regular.svg);
+}
+
+.pencil::before {
+	content: url(../img/icons/pencil-alt-solid.svg);
+}
+
+.check .icon::before {
+	content: url(../img/icons/check-solid.svg);
 }
