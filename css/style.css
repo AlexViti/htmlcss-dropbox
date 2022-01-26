@@ -175,9 +175,16 @@ h2 {
 }
 
 .plan-card {
-	width: 30%;
 	border: 1px solid gray;
+}
+
+.plan-card>section {
 	padding: 1rem;
+	border-top: 1px solid gray;
+}
+
+.plan-card-column {
+	width: 30%;
 }
 
 .plan-card:nth-of-type(2) {
@@ -186,10 +193,6 @@ h2 {
 
 .plan-type {
 	text-align: center;
-}
-
-.plan-card h3 {
-	border-top: 1px solid gray;
 }
 
 .price {
@@ -211,11 +214,11 @@ h2 {
 	height: .9em;
 	width: .9em;
 	vertical-align: -.2em;
-	margin-right: -.3rem;
+	margin-right: -.2rem;
 }
 
 .icon {
-	text-indent: -.6em;
+	text-indent: -.7em;
 	margin-left: 1.3rem;
 }
 
