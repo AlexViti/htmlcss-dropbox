@@ -67,6 +67,10 @@ nav ul>li {
 	color: white;
 }
 
+.btn-white {
+	border: 1px solid black;
+}
+
 .circle {
 	display: inline-block;
 	height: 1em;
@@ -162,6 +166,25 @@ h2 {
 
 #first-section {
 	margin-top: 10rem;
+}
+
+.partners {
+	width: 50%;
+}
+
+/* Mock radios button */
+
+.circle {
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	border-radius: 50%;
+	border: 1px solid gray;
+	vertical-align: middle;
+}
+
+.circle-selected {
+	border: 4px solid #0061ff;
 }
 
 .billing .circle:not(:first-of-type) {
