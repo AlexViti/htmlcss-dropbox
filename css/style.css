@@ -43,32 +43,12 @@ html {
 	float: right;
 }
 
-a {
-	text-decoration: none;
-	color: black;
-}
-
 ul {
 	list-style: none;
 }
 
 nav ul>li {
 	display: inline-block;
-}
-
-.btn {
-	display: inline-block;
-	padding: .5em 1em;
-	line-height: 1em;
-}
-
-.btn-blue {
-	background-color: #0061ff;
-	color: white;
-}
-
-.btn-white {
-	border: 1px solid black;
 }
 
 .circle {
@@ -94,6 +74,33 @@ h2 {
 	margin-bottom: 3rem;
 }
 
+/* Links style */
+
+a {
+	color: #0061ff;
+	text-decoration-line: underline;
+}
+
+.btn, nav a {
+	text-decoration-line: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: .5em 1em;
+	line-height: 1em;
+}
+
+.btn-blue {
+	background-color: #0061ff;
+	color: white;
+}
+
+.btn-white {
+	border: 1px solid black;
+	color: black;
+}
+
 /* Top navbar rules */
 
 .top-nav {
@@ -113,6 +120,7 @@ h2 {
 
 .top-nav li>a {
 	display: inline-block;
+	color: black;
 }
 
 .logo-nav {
@@ -160,6 +168,7 @@ h2 {
 	display: inline-block;
 	margin-top: 2rem;
 	font-size: 2rem;
+	color: black;
 }
 
 /* Sections */
