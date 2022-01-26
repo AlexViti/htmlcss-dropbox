@@ -7,7 +7,7 @@
 /* Common rules */
 
 html {
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	line-height: 1.4;
 }
@@ -51,28 +51,30 @@ nav ul>li {
 	display: inline-block;
 }
 
-.circle {
-	display: inline-block;
-	height: 1em;
-	width: 1em;
-	border-radius: 50%;
-	border: 1px solid gray;
-	vertical-align: middle;
-}
-
-.circle-selected {
-	border: 4px solid #0061ff;
-}
-
 h1 {
 	font-size: 4rem;
 	font-weight: 700;
+	font-family: 'Open Sans Condensed', 'Open Sans' sans-serif;;
 }
 
 h2 {
 	font-size: 2rem;
-	margin-bottom: 3rem;
 }
+
+h3 {
+	font-size: 1.7rem;
+}
+
+/* Margin */
+
+.mt-3rem {
+	margin-top: 3rem;
+}
+
+.mt-5rem {
+	margin-top: 5rem;
+}
+
 
 /* Links style */
 
@@ -148,8 +150,7 @@ a {
 }
 
 .main-header {
-	margin-top: 5rem;
-	padding: 8rem 0 4rem;
+	padding: 5rem 0 4rem;
 }
 
 .main-header img {
@@ -160,7 +161,7 @@ a {
 	margin-bottom: 2rem;
 }
 
-.main-header .btn {
+.main-header .btn, .cards-row .btn {
 	margin: 1rem 0;
 }
 
@@ -217,11 +218,16 @@ a {
 
 .plan-card {
 	border: 1px solid gray;
+	font-size: .9rem;
 }
 
 .plan-card>section {
 	padding: 1rem;
 	border-top: 1px solid gray;
+}
+
+.plan-card li{
+	margin-top: .5em;
 }
 
 .plan-type {
@@ -234,6 +240,7 @@ a {
 
 .recurrence {
 	color: gray;
+	height: 3rem;
 }
 
 .plan-card hr {
