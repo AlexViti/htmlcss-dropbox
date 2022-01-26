@@ -13,59 +13,79 @@
 </head>
 
 <body>
-	<!-- header with a fixed navbar, a title, a paragraph, an image and 3 links -->
-	<header>
+	<!-- header with a fixed navbar -->
+	<header class="top-nav clearfix">
 		<!-- fixed navbar with logo, 6 links and a button -->
-		<nav class="top-nav clearfix">
-			<!-- logo image linked to homepage -->
-			<a href="index.html" class="logo-nav float-left">
-				<img src="img/logo-small.png" alt="Logo Dropbox" class="logo">
-			</a>
-
+		<!-- logo image linked to homepage -->
+		<a href="index.html" class="logo-nav float-left">
+			<img src="img/logo-small.png" alt="Logo Dropbox" class="logo">
+		</a>
+		
+		<div class="float-right">
+			<a href="#!" class="btn btn-blue">Inizia</a>
+		</div>		
+		
+		<nav>
+			
 			<ul class="float-left">
 				<li><a href="#">Perchè Dropbox</a></li>
 				<li><a href="#">Funzioni</a></li>
 				<li><a href="#">Piani e prezzi</a></li>
 			</ul>
-
+			
 			<ul class="float-right">
 				<li><a href="#">Supporto</a></li>
 				<li><a href="#">Contatta l'ufficio vendite</a></li>
 				<li><a href="#">Accedi</a></li>
-				<li>
-					<a href="#!" class="btn btn-blue">Inizia</a>
-				</li>
 			</ul>
-
+			
 		</nav>
 
-		<section class="container-1300 centered">
-			
-			<h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-			
-			<img src="img/jumbo.png" alt="" class="float-right">
-			
-			<p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il tuo flusso di lavoro esistente.</p>
-			
-			<a href="#" class="btn btn-blue">Inizia la tua prova gratuita</a>
-			
-			<div>Annulla in qualsiasi momento</div>
-			
-			<a href="#first-section" class="arrow-down"><i class="fas fa-arrow-down"></i></a>
-		</section>
-
+		
+		
 	</header>
 
 	<!-- main with 4 sections -->
 	<main>
+		<!-- Main header with a title, a paragraph, an image and 2 links -->
+		<header class="main-header">
+			<section class="container-1300 centered">
+			
+				<h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+				
+				<img src="img/jumbo.png" alt="" class="float-right">
+				
+				<p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il tuo flusso di lavoro esistente.</p>
+				
+				<a href="#" class="btn btn-blue">Inizia la tua prova gratuita</a>
+				
+				<div>Annulla in qualsiasi momento</div>
+				
+				<a href="#first-section" class="arrow-down"><i class="fas fa-arrow-down"></i></a>
+			</section>	
+
+		</header>
+
 		<section id="first-section">
 			<div class="container-1100 centered">
+				
 				<h2>Trova il piano Dropbox Business che fa per te</h2>
 				
 				<div class="billing">
 					<span class="circle circle-selected"></span> Fatturazione mensile
 					<span class="circle"></span> Fatturazione annuale
 				</div>
+
+				<!-- 3 card columns -->
+				<div class="plan-card">
+					<div class="plan-type">Singolo</div>
+					<h3>Professional</h3>
+					<div class="price">19,99 €</div>
+					<div class="recurrence">/mese</div>
+
+
+				</div>
+
 			</div>
 		</section>
 
