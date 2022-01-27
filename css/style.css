@@ -79,11 +79,25 @@ hr {
 	border: 1px solid #d0d0d3;
 }
 
+/* Dropdown */
+
+.dropdown-content {
+	display: none;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
 /* Links style and buttons */
 
 a {
 	color: #0061ff;
 	text-decoration-line: underline;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 .btn, nav a {
@@ -112,6 +126,12 @@ a {
 	border: 1px solid black;
 }
 
+.dropbox-to-company .btn,
+.horizzontal-plan-card .btn {
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
 /* Top navbar rules */
 
 .top-nav {
@@ -135,7 +155,7 @@ a {
 	width: calc(100% - 250px);
 }
 
-nav, .top-nav>div, .top-nav ul {
+nav, .top-nav>div, .top-nav nav>ul {
 	display: inline-block;
 }
 
@@ -153,12 +173,31 @@ nav, .top-nav>div, .top-nav ul {
 	margin-right: 3rem;
 }
 
-.top-nav nav li {
+.top-nav nav>ul>li {
 	margin-right: 3rem;
 }
 
 .top-nav .btn {
 	vertical-align: middle;
+}
+
+.top-nav .dropdown-content {
+	position: absolute;
+	transform: translateX(-2rem);
+	
+	background-color: #fafafa;
+	font-size: .9rem;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+.top-nav .dropdown-content a{
+	padding: .5rem 2rem;
+	width: 100%;
+}
+
+.top-nav .dropdown-content a:hover{
+	background-color: #eeeeee;
 }
 
 /* Main rules */
@@ -254,6 +293,15 @@ nav, .top-nav>div, .top-nav ul {
 	position: relative;
 }
 
+.faq .dropdown-content {
+	padding-top: 2rem;
+	color: gray;
+}
+
+.faq .dropdown-content a {
+	color: inherit;
+}
+
 .faq section.dropdown h4::after {
 	content: url(../img/icons/chevron-down-solid.svg);
 	display: inline-block;
@@ -312,6 +360,10 @@ nav, .top-nav>div, .top-nav ul {
 	border-radius: 50%;
 	border: 1px solid #d0d0d3;
 	vertical-align: middle;
+}
+
+.circle:hover {
+	cursor: pointer;
 }
 
 .circle-selected {
@@ -403,11 +455,6 @@ nav, .top-nav>div, .top-nav ul {
 
 h3+h4 {
 	margin: 1rem 0;
-}
-
-.horizzontal-plan-card .btn {
-	padding-left: 3rem;
-	padding-right: 3rem;
 }
 
 .business-feature .column>img {
@@ -545,7 +592,8 @@ h3+h4 {
 }
 
 .logo-designit {
-	width: 200px;
+	width: 30%;
+	min-width: 100px;
 }
 
 .big-designit hr {
@@ -554,14 +602,4 @@ h3+h4 {
 
 .big-designit p {
 	margin-bottom: 3rem;
-}
-
-/* Dropdown */
-
-.dropdown-content {
-	display: none;
-}
-
-.dropdown:hover .dropdown-content{
-	display: block;
 }
