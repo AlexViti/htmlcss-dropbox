@@ -395,15 +395,17 @@ a:hover {
 /* Cards */
 
 .column {
-	width: 30%;
+	width: calc((100% - 8rem)/3);
+	font-size: initial;
 }
 
 .column:nth-of-type(2) {
-	margin: 0 5%;
+	margin: 0 4rem;
 }
 
 .cards-row {
 	width: 100%;
+	font-size: 0;
 }
 
 .plan-card {
@@ -460,7 +462,7 @@ a:hover {
 }
 
 .plan-card:first-of-type {
-	padding-bottom: 4rem;
+	padding-bottom: 44px;
 }
 
 .horizzontal-plan-card {
@@ -471,7 +473,7 @@ a:hover {
 	margin: 1.5rem 0;
 }
 
-h3+h4 {
+.plan-card h3+h4 {
 	margin: 1rem 0;
 }
 
@@ -479,7 +481,12 @@ h3+h4 {
 	width: 100%;
 }
 
-.business-feature h3, .business-feature h2 {
+.business-feature .cards-row {
+	margin-bottom: 8rem;
+}
+
+.business-feature h3,
+.business-feature h2 {
 	margin-bottom: 2rem;
 }
 
