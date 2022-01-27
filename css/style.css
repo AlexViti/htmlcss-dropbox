@@ -12,6 +12,10 @@ html {
 	line-height: 1.4;
 }
 
+body {
+	margin-top: 5rem;
+}
+
 .clearfix::after {
 	content: '';
 	display: table;
@@ -217,13 +221,17 @@ nav, .top-nav>div, .top-nav nav>ul {
 
 /* Main header */
 .main-header {
-	padding: 100px 0 80px;
-	margin-top: 5rem;
+	padding: 100px 0 1rem;
 }
 
 .main-header img {
 	max-width: 65%;
-	margin-left: 50px
+	margin-left: 40px;
+	margin-bottom: -80px;
+}
+
+.main-header p {
+	max-width: 35%;
 }
 
 .main-header h1 {
