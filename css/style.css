@@ -47,7 +47,7 @@ ul {
 	list-style: none;
 }
 
-nav ul>li {
+nav>ul>li {
 	display: inline-block;
 }
 
@@ -262,6 +262,42 @@ nav, .top-nav>div, .top-nav ul {
 	right: 2rem;
 }
 
+/* Footer rules  */
+
+.page-footer {
+	background-color: black;
+	padding-bottom: 45px;
+}
+
+.page-footer nav *{
+	color: white;
+}
+
+.footer-nav {
+	display: block;
+	width: 100%;
+	padding: 120px 0;
+}
+
+.footer-nav h4 {
+	margin-bottom: 2rem;
+}
+
+.footer-nav>ul>li {
+	width: 20%;
+	font-size: .9rem;
+	line-height: 2;
+}
+
+
+.language-selection {
+	color: #999;
+	text-decoration: none;
+	padding-top: 45px;
+	padding-right: 3rem;
+	border-top: 1px solid #a6a6a6;
+}
+
 /* Mock radios button */
 
 .circle {
@@ -376,6 +412,7 @@ h3+h4 {
 .business-feature h3, .business-feature h2 {
 	margin-bottom: 2rem;
 }
+
 /* Plan card list bullets */
 
 .plan-card .icon::before {
