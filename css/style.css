@@ -536,9 +536,17 @@ h3+h4 {
 	background-color: #f5f5f5;
 	overflow-y: auto;
 	overflow-x: hidden;
-	padding: 3rem;
+	padding: 3.5rem;
 }
 
 .logo-designit {
 	width: 200px;
+}
+
+.big-designit hr {
+	margin: 2rem 0 2.5rem;
+}
+
+.big-designit p {
+	margin-bottom: 3rem;
 }
