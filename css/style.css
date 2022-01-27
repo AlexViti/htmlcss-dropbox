@@ -74,7 +74,7 @@ hr {
 	border: 1px solid #d0d0d3;
 }
 
-/* Links style */
+/* Links style and buttons */
 
 a {
 	color: #0061ff;
@@ -98,9 +98,13 @@ a {
 	color: white;
 }
 
+.btn-white, .btn-white-noborder {
+	color: black;
+	background-color: white;
+}
+
 .btn-white {
 	border: 1px solid black;
-	color: black;
 }
 
 /* Top navbar rules */
@@ -121,7 +125,7 @@ a {
 	background-color: white;
 }
 
-nav {
+.top-nav nav {
 	display: inline-block;
 	width: calc(100% - 250px);
 }
@@ -223,6 +227,16 @@ nav, .top-nav>div, .top-nav ul {
 	margin-bottom: 2rem;
 }
 
+.bg-lightblue {
+	background-color: #b4d0e7;
+	padding: 120px 0;
+}
+
+.bg-lightblue h2 {
+	color: #620b2e;
+	width: 50%;
+}
+
 /* Mock radios button */
 
 .circle {
@@ -268,7 +282,6 @@ nav, .top-nav>div, .top-nav ul {
 
 .plan-card ul {
 	margin: 3rem 0;
-	font-family: ;
 }
 
 .plan-card li:not(:first-child) {
