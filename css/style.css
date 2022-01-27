@@ -117,9 +117,17 @@ a:hover {
 	color: white;
 }
 
+.btn-blue:hover {
+	background-color: #3b85ff;
+}
+
 .btn-white, .btn-white-noborder {
 	color: black;
 	background-color: white;
+}
+
+.btn-white:hover, .btn-white-noborder:hover {
+	background-color: #efefef;
 }
 
 .btn-white {
@@ -144,7 +152,7 @@ a:hover {
 	white-space: nowrap;
 	width: 100%;
 	height: 5rem;
-	line-height: 5rem;
+	line-height: calc(5rem - 2px);
 	padding: 0 1.5rem;
 	
 	background-color: white;
@@ -175,6 +183,11 @@ nav, .top-nav>div, .top-nav nav>ul {
 
 .top-nav nav>ul>li {
 	margin-right: 3rem;
+	padding-top: 1px;
+}
+
+.top-nav nav>ul>li:hover {
+	border-bottom: 1px solid black;
 }
 
 .top-nav .btn {
@@ -183,7 +196,7 @@ nav, .top-nav>div, .top-nav nav>ul {
 
 .top-nav .dropdown-content {
 	position: absolute;
-	transform: translateX(-2rem);
+	transform: translate(-2rem, 1px);
 	
 	background-color: #fafafa;
 	font-size: .9rem;
@@ -322,7 +335,7 @@ nav, .top-nav>div, .top-nav nav>ul {
 	padding-bottom: 45px;
 }
 
-.page-footer nav *{
+.footer-nav *{
 	color: white;
 }
 
@@ -330,6 +343,10 @@ nav, .top-nav>div, .top-nav nav>ul {
 	display: block;
 	width: 100%;
 	padding: 120px 0;
+}
+
+.footer-nav a:hover{
+	text-decoration-line: underline;
 }
 
 .footer-nav h4 {
