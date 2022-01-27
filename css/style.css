@@ -27,14 +27,17 @@ body {
 	position: relative;
 }
 
+.container-1300, .container-1100 {
+	box-sizing: content-box;
+	padding: 0 1rem;
+}
+
 .container-1300 {
 	max-width: 1300px;
-	padding: 0 1rem;
 }
 
 .container-1100 {
 	max-width: 1100px;
-	padding: 0 1rem;
 }
 
 .bg-lightblue {
@@ -146,56 +149,46 @@ a:hover {
 
 /* Top navbar rules */
 
-.top-nav {
+.fixed-header {
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	z-index: 10;
 	
-	min-width: 1230px;
-	white-space: nowrap;
-	width: 100%;
 	height: 5rem;
-	line-height: calc(5rem - 2px);
-	padding: 0 1.5rem;
 	
 	background-color: white;
 }
 
-.top-nav nav {
-	display: inline-block;
-	width: calc(100% - 250px);
+.top-nav {
+	width: 100%;
+	min-width: 1220px;
+	line-height: calc(5rem - 2px);
+	padding: 0 1rem;
 }
 
-nav, .top-nav>div, .top-nav nav>ul {
-	display: inline-block;
-}
-
-.top-nav li>a {
+.top-nav li>a:not(.btn) {
 	display: inline-block;
 	color: black;
 }
 
-.logo-nav {
-	display: inline-block;
-}
-
 .logo {
 	vertical-align: middle;
-	margin-right: 3rem;
 }
 
-.top-nav nav>ul>li {
+.top-nav>ul>li:not(:last-child) {
 	margin-right: 3rem;
 	padding-top: 1px;
 }
 
-.top-nav nav>ul>li:hover {
+.top-nav>ul>li:hover {
 	border-bottom: 1px solid black;
 }
 
-.top-nav .btn {
-	vertical-align: middle;
+.top-nav ul:first-child>li:first-child:hover,
+.top-nav ul:last-child>li:last-child:hover {
+	border-bottom: none;
 }
 
 .top-nav .dropdown-content {
@@ -227,7 +220,7 @@ nav, .top-nav>div, .top-nav nav>ul {
 .main-header img {
 	max-width: 65%;
 	margin-left: 40px;
-	margin-bottom: -80px;
+	margin-bottom: -90px;
 }
 
 .main-header p {
