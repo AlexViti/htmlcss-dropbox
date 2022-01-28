@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	scroll-margin-top: 5rem; /* Allows the link to go past the fixed navbar */
 }
 
 /* Common rules */
@@ -184,14 +185,14 @@ a:hover {
 	border-bottom: 1px solid black;
 }
 
-.top-nav ul:first-child>li:first-child:hover,
-.top-nav ul:last-child>li:last-child:hover {
+.top-nav ul:first-child>li:first-child:hover,  /* Remove the previous hover effect */
+.top-nav ul:last-child>li:last-child:hover {	  /* on nav-bar logo and button */
 	border-bottom: none;
 }
 
 .top-nav .dropdown-content {
 	position: absolute;
-	transform: translate(-2rem, 1px);
+	transform: translate(-2rem, 1px);  /* Adjust menu position to compensate its padding and parent's border on hover */
 	
 	font-size: .9rem;
 	line-height: 2rem;
@@ -235,7 +236,9 @@ a:hover {
 
 .arrow-down {
 	display: inline-block;
+	
 	margin-top: 2rem;
+
 	font-size: 3rem;
 	color: black;
 }
@@ -244,7 +247,6 @@ a:hover {
 
 #first-section {
 	margin-top: 200px;
-	scroll-margin-top: 5rem;
 }
 
 .billing {
@@ -301,8 +303,11 @@ a:hover {
 
 .faq section.dropdown {
 	border-top: 1px solid #d0d0d3;
-	border-bottom: 1px solid #d0d0d3;
 	padding: 2rem 0;
+}
+
+.faq section.dropdown:last-child {
+	border-bottom: 1px solid #d0d0d3;
 }
 
 .faq section h4 {
