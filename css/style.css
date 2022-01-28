@@ -507,15 +507,15 @@ a:hover {
 .plan-card .icon::before {
 	display: inline-block;
 	
-	height: .9em;
-	width: .9em;
+	height: 1rem;
+	width: 1rem;
 	
-	vertical-align: -.2em;
+	vertical-align: -.1em;
 	margin-right: -.2rem;
 }
 
-li.icon {
-	text-indent: -.7em;  /* Allows second lines of the listed item */								
+.icon {
+	text-indent: -.9em;  /* Allows second lines of the listed item */								
 	margin-left: 1.3rem; /*to stand after the costum bullet and not beneath it */
 }
 
