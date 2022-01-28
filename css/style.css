@@ -193,9 +193,10 @@ a:hover {
 	position: absolute;
 	transform: translate(-2rem, 1px);
 	
-	background-color: #fafafa;
 	font-size: .9rem;
 	line-height: 2rem;
+	
+	background-color: #fafafa;
 }
 
 .top-nav .dropdown-content a{
@@ -225,7 +226,7 @@ a:hover {
 }
 
 .main-header h1 {
-	margin-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 .main-header .btn {
@@ -272,12 +273,16 @@ a:hover {
 	margin-top: 110px;
 }
 
+.business-feature .cards-row a {
+	color: black;
+}
+
 .clients {
 	margin-top: 200px;
 }
 
 .clients h2 {
-	width: 50%;
+	width: 52%;
 	margin-bottom: 2rem;
 }
 
@@ -348,7 +353,8 @@ a:hover {
 }
 
 .footer-nav h4 {
-	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+	font-size: 1.3rem;
 }
 
 .footer-nav>ul>li {
@@ -360,21 +366,26 @@ a:hover {
 
 .language-selection {
 	color: #999;
-	text-decoration: none;
+	border-top: 1px solid #a6a6a6;
+	
 	padding-top: 45px;
 	padding-right: 3rem;
-	border-top: 1px solid #a6a6a6;
+	
+	text-decoration: none;
+	font-size: .9rem;
 }
 
 /* Mock radios button */
 
 .circle {
 	display: inline-block;
+	vertical-align: middle;
+	
 	height: 1em;
 	width: 1em;
+	
 	border-radius: 50%;
 	border: 1px solid #d0d0d3;
-	vertical-align: middle;
 }
 
 .circle:hover {
@@ -457,8 +468,8 @@ a:hover {
 	margin-bottom: 5rem;
 }
 
-.plan-card:first-of-type {
-	padding-bottom: 44px;
+.plan-card:first-of-type section{
+	padding-bottom: 88px;
 }
 
 .horizzontal-plan-card {
@@ -490,16 +501,20 @@ a:hover {
 
 .plan-card .icon::before {
 	display: inline-block;
+	
 	height: .9em;
 	width: .9em;
+	
 	vertical-align: -.2em;
 	margin-right: -.2rem;
 }
 
-.icon {
-	text-indent: -.7em;
-	margin-left: 1.3rem;
+li.icon {
+	text-indent: -.7em;  /* Allows second lines of the listed item */								
+	margin-left: 1.3rem; /*to stand after the costum bullet and not beneath it */
 }
+
+/* List bullets url */
 
 .user::before {
 	content: url(../img/icons/user-regular.svg);
@@ -529,11 +544,17 @@ a:hover {
 	content: url(../img/icons/check-solid.svg);
 }
 
-/* Boxes */
+/* Square Boxes */
 
 .boxes {
 	margin-top: 2rem;
-	font-size: 0;
+	font-size: 0; /* Removes spaces between boxes*/
+}
+
+.box:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }
 
 .small-box {
@@ -551,17 +572,37 @@ a:hover {
 	width: calc(100%/3);
 }
 
-.box:after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
-
 .box-content {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
+
+.big-designit>.box-content {
+	font-size: 1rem; /* Reset font-size after removing it from its parent */
+	
+	background-color: #f5f5f5;
+
+	overflow-y: auto;		/* Manage scrollbar behaviour */
+	overflow-x: hidden;
+
+	padding: 3.5rem;
+}
+
+.big-designit .logo-designit {
+	width: 30%;
+	min-width: 100px;
+}
+
+.big-designit hr {
+	margin: 2rem 0 2.5rem;
+}
+
+.big-designit p {
+	margin-bottom: 3rem;
+}
+
+/* Clients' boxes background image and color */
 
 .designit {
 	background-image: url(../img/designit-white.svg);
@@ -602,25 +643,4 @@ a:hover {
 .clear-channel {
 	background-image: url(../img/clear_channel.svg);
 	background-color: #ffd830;
-}
-
-.big-designit>.box-content {
-	font-size: 1rem;
-	background-color: #f5f5f5;
-	overflow-y: auto;
-	overflow-x: hidden;
-	padding: 3.5rem;
-}
-
-.logo-designit {
-	width: 30%;
-	min-width: 100px;
-}
-
-.big-designit hr {
-	margin: 2rem 0 2.5rem;
-}
-
-.big-designit p {
-	margin-bottom: 3rem;
 }
